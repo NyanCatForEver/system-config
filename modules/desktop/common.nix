@@ -52,6 +52,9 @@
   };
 
   environment.systemPackages = with pkgs; [
+    ghostty
+    vicinae
+    
     kdePackages.dolphin
     kdePackages.ark
     kdePackages.keepsecret

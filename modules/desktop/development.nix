@@ -13,8 +13,6 @@
     zed-editor
     vscode
     helix
-    vicinae
-    ghostty
     distrobox
     gh
     python3
