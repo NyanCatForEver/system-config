@@ -74,6 +74,8 @@
     ncdu
     fastfetch
 
+    nvd
+
     git-credential-manager
     agenix
   ];
