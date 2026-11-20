@@ -59,6 +59,8 @@ in
     systemd.target = "niri.service";
   };
 
+  systemd.user.services.wl-clip-persist.wantedBy = [ "niri.service" ];
+
   environment.systemPackages = with pkgs; [
     xwayland-satellite
 
@@ -72,6 +74,18 @@ in
     kdePackages.breeze
     qt6Packages.qt6ct-kde
   ];
+
+  systemd.user.services.wl-clip-persist = {
+    description = "Keep Wayland clipboard even after programs close";
+    documentation = [ "https://github.com/Linus789/wl-clip-persist" ];
+    partOf = [ "graphical-session.target" ];
+    after = [ "graphical-session.target" ];
+    serviceConfig = {
+      Type = "exec";
+      ExecStart = "${lib.getExe pkgs.wl-clip-persist} --clipboard regular --all-mime-type-regex '^(?!x-kde-passwordManagerHint).+'";
+      Restart = "on-failure";
+    };
+  };
 
   nixpkgs.overlays = [
     (final: prev: {
