@@ -19,6 +19,7 @@
     nushell
     libqalculate
     speedcrunch
+    okteta
 
     nixfmt
     nixd
