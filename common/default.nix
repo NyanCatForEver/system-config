@@ -65,6 +65,7 @@
   environment.systemPackages = with pkgs; [
     micro
     wget
+    file
     osc
     killall
     unzip
