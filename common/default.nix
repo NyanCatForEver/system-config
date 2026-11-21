@@ -1,5 +1,6 @@
 {
   pkgs,
+  config,
   hostName,
   ...
 }:
@@ -53,6 +54,7 @@
       user = {
         name = "Nyan";
         email = "graphical.target@gmail.com";
+        signingkey = "${config.users.users.nyan.home}/.ssh/id_ed25519";
       };
     };
   };
