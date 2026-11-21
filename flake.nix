@@ -60,7 +60,7 @@
           modules = modules ++ [
             overlay
             ./common
-            ./hosts/${hostName}
+            ./hosts/${hostName}/configuration.nix
             ./hosts/${hostName}/hardware-configuration.nix
           ];
 
