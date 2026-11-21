@@ -53,6 +53,7 @@
 
   environment.systemPackages = with pkgs; [
     ghostty
+    kitty # kitten
     vicinae
     
     kdePackages.dolphin
