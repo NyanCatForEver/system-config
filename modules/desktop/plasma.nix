@@ -7,6 +7,7 @@
     elisa
     gwenview
     khelpcenter
+    discover
   ];
   programs.kde-pim.enable = false;
 

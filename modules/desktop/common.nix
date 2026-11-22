@@ -66,6 +66,8 @@
     mission-center
     gnome-disk-utility
 
+    bazaar
+
     localsend
     thunderbird
     (helium.override {
