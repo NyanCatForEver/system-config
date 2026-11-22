@@ -59,6 +59,10 @@
   programs.gnome-disks.enable = true;
   programs.partition-manager.enable = true;
 
+  system.userActivationScripts.vicinae-refresh-apps = ''
+    ${pkgs.vicinae}/bin/vicinae cmd launch core:refresh-apps
+  '';
+
   environment.systemPackages = with pkgs; [
     ghostty
     kitty # kitten
