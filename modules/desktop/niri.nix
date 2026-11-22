@@ -61,19 +61,22 @@ in
 
   systemd.user.services.wl-clip-persist.wantedBy = [ "niri.service" ];
 
-  environment.systemPackages = with pkgs; [
-    xwayland-satellite
+  environment.systemPackages =
+    with pkgs;
+    [
+      xwayland-satellite
 
-    fuzzel
-    toggle-app-launcher
+      fuzzel
+      toggle-app-launcher
 
-    nwg-look
-    adw-gtk3
-    adwaita-icon-theme
+      nwg-look
+      adw-gtk3
+      adwaita-icon-theme
 
-    kdePackages.breeze
-    qt6Packages.qt6ct-kde
-  ];
+      kdePackages.breeze
+      qt6Packages.qt6ct-kde
+    ]
+    ++ lib.optionals config.networking.networkmanager.enable (with pkgs; [ networkmanagerapplet ]);
 
   systemd.user.services.wl-clip-persist = {
     description = "Keep Wayland clipboard even after programs close";
