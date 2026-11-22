@@ -69,5 +69,13 @@
     output "HDMI-A-1" { scale 1.67; }
   '';
 
+  programs.java.symlink = {
+    enable = true;
+    packages = {
+      openjdk-8 = "${pkgs.openjdk8}/lib/openjdk";
+      openjdk-25 = "${pkgs.openjdk25}/lib/openjdk";
+    };
+  };
+
   system.stateVersion = "26.11";
 }

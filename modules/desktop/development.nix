@@ -29,7 +29,6 @@
 
     visualvm
     keystore-explorer
-    jdk8
 
     pnpm
     deno

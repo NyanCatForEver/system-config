@@ -7,6 +7,7 @@
 
 {
   imports = [
+    ./modules
     ./locale.nix
     ./services.nix
   ];
