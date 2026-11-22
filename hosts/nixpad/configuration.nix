@@ -58,6 +58,8 @@
   hardware.graphics.extraPackages = with pkgs; [ intel-media-driver ];
   boot.kernelParams = [ "i915.enable_guc=3" ];
 
+  hardware.bluetooth.enable = true;
+
   services.kmscon.config.font-size = 24;
 
   services.displayManager.dux-greeter.compositor.customConfig = ''
