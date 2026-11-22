@@ -13,13 +13,15 @@
     zed-editor
     vscode
     helix
-    distrobox
+
     gh
+    distrobox
+
     python3
     nushell
+
     libqalculate
     speedcrunch
-    okteta
 
     nixfmt
     nixd
@@ -29,5 +31,12 @@
 
     pnpm
     deno
+
+    okteta
+    imhex
+    cutter
+    cutterPlugins.rz-ghidra
+    rizin
+    rizinPlugins.rz-ghidra
   ];
 }
