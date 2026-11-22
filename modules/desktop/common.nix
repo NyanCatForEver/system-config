@@ -83,6 +83,7 @@
     imagemagick
     ffmpeg
 
+    kdePackages.kdeconnect-kde
     android-tools
     scrcpy
   ];
