@@ -11,6 +11,7 @@
     jq
     difftastic
 
+    intellij-idea
     zed-editor
     vscode
     helix
