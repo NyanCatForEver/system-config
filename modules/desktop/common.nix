@@ -55,7 +55,7 @@
     ghostty
     kitty # kitten
     vicinae
-    
+
     kdePackages.dolphin
     kdePackages.ark
     kdePackages.keepsecret
@@ -64,6 +64,7 @@
     haruna
     pavucontrol
     mission-center
+    gnome-disk-utility
 
     localsend
     thunderbird
