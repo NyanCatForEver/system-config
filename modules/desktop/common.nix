@@ -51,6 +51,10 @@
     TERMINAL = "ghostty";
   };
 
+  programs.thunderbird.enable = true;
+  programs.localsend.enable = true;
+  programs.kdeconnect.enable = true;
+
   programs.gnome-disks.enable = true;
   programs.partition-manager.enable = true;
 
@@ -73,8 +77,6 @@
 
     bazaar
 
-    localsend
-    thunderbird
     (helium.override {
       commandLineArgs = "--password-store=gnome-libsecret";
     })
@@ -87,7 +89,6 @@
     imagemagick
     ffmpeg
 
-    kdePackages.kdeconnect-kde
     android-tools
     scrcpy
   ];
