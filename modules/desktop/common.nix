@@ -83,6 +83,7 @@
     bitwarden-desktop
     vesktop
     qbittorrent
+    remmina
 
     wl-clipboard
 
