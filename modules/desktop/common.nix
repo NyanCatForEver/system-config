@@ -65,6 +65,7 @@
     pavucontrol
     mission-center
     gnome-disk-utility
+    kdiskmark
 
     bazaar
 
