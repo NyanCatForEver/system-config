@@ -3,6 +3,7 @@
 {
   programs.java.enable = true;
   programs.ghidra.enable = true;
+  programs.renderdoc.enable = true;
 
   environment.systemPackages = with pkgs; [
     ripgrep
@@ -38,5 +39,7 @@
     cutterPlugins.rz-ghidra
     rizin
     rizinPlugins.rz-ghidra
+
+    apitrace
   ];
 }
