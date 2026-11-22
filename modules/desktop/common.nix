@@ -64,9 +64,11 @@
     haruna
     pavucontrol
     mission-center
-    gnome-disk-utility
-    kdiskmark
     gnome-font-viewer
+
+    gnome-disk-utility
+    kdePackages.partitionmanager
+    kdiskmark
 
     bazaar
 
