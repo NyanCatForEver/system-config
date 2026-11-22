@@ -47,8 +47,9 @@
 
   programs.obs-studio.enable = true;
 
-  environment.variables = {
-    TERMINAL = "ghostty";
+  xdg.terminal-exec = {
+    enable = true;
+    settings.default = [ "com.mitchellh.ghostty.desktop" ];
   };
 
   programs.thunderbird.enable = true;
