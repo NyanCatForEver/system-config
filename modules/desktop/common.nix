@@ -80,6 +80,7 @@
     })
     bitwarden-desktop
     vesktop
+    qbittorrent
 
     wl-clipboard
 
