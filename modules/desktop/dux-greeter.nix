@@ -7,11 +7,8 @@
     compositor = {
       name = "niri";
       customConfig = ''
-        output "HDMI-A-1" {
-          scale 1.67
-          layout {
-            background-color "#000000"
-          }
+        layout {
+          background-color "#000000"
         }
 
         cursor {

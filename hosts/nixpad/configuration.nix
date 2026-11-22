@@ -60,5 +60,9 @@
 
   services.kmscon.config.font-size = 24;
 
+  services.displayManager.dux-greeter.compositor.customConfig = ''
+    output "eDP-1" { scale 1.25; }
+  '';
+
   system.stateVersion = "26.11";
 }

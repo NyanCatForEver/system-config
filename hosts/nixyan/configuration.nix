@@ -65,5 +65,9 @@
 
   services.kmscon.config.font-size = 32;
 
+  services.displayManager.dux-greeter.compositor.customConfig = ''
+    output "HDMI-A-1" { scale 1.67; }
+  '';
+
   system.stateVersion = "26.11";
 }
