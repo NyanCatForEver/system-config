@@ -26,6 +26,7 @@
     nixd
 
     visualvm
+    keystore-explorer
     jdk8
 
     pnpm
