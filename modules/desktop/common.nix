@@ -51,6 +51,9 @@
     TERMINAL = "ghostty";
   };
 
+  programs.gnome-disks.enable = true;
+  programs.partition-manager.enable = true;
+
   environment.systemPackages = with pkgs; [
     ghostty
     kitty # kitten
@@ -66,8 +69,6 @@
     mission-center
     gnome-font-viewer
 
-    gnome-disk-utility
-    kdePackages.partitionmanager
     kdiskmark
 
     bazaar
