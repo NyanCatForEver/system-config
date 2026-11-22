@@ -76,7 +76,8 @@ in
       kdePackages.breeze
       qt6Packages.qt6ct-kde
     ]
-    ++ lib.optionals config.networking.networkmanager.enable (with pkgs; [ networkmanagerapplet ]);
+    ++ lib.optionals config.networking.networkmanager.enable (with pkgs; [ networkmanagerapplet ])
+    ++ lib.optionals config.hardware.bluetooth.enable (with pkgs; [ bluetui ]);
 
   systemd.user.services.wl-clip-persist = {
     description = "Keep Wayland clipboard even after programs close";
