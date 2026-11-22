@@ -79,6 +79,7 @@
 
     nvd
 
+    gh
     git-credential-manager
     agenix
   ];

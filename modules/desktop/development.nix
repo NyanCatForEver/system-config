@@ -14,7 +14,6 @@
     vscode
     helix
 
-    gh
     distrobox
 
     python3
