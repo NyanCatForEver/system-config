@@ -66,6 +66,7 @@
     mission-center
     gnome-disk-utility
     kdiskmark
+    gnome-font-viewer
 
     bazaar
 
