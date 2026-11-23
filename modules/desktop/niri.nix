@@ -97,10 +97,11 @@ in
         final': prev': {
           qt6ct-kde = prev'.qt6ct.overrideAttrs (prev'': {
             pname = "qt6ct-kde";
+            buildInputs = prev''.buildInputs ++ [ final.kdePackages.kiconthemes ];
             patches = (prev''.patches or [ ]) ++ [
-              (prev.fetchpatch {
-                url = "https://aur.archlinux.org/cgit/aur.git/plain/qt6ct-shenanigans.patch?h=qt6ct-kde";
-                hash = "sha256-Q8QOMDy84z6FD0OkSLylEwB+/Zs50jcUgR+4J6Lmwmk=";
+              (final.fetchpatch {
+                url = "https://github.com/duxlabs-dev/dux-repo/raw/90e2a24a7184f67bc57912e17cb3beee381ed261/distro/fedora/qt6ct-kde/qt6ct-kde-0.11.patch";
+                hash = "sha256-HFKqlWvTV/Uh1V2S7sQZqOlIiX/pXWs7JTp1Wq7BkZc=";
               })
             ];
           });
