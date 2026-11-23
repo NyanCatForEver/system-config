@@ -70,6 +70,7 @@ in
       toggle-app-launcher
 
       nwg-look
+      gnome-tweaks
       adw-gtk3
       adwaita-icon-theme
 
