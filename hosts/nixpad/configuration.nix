@@ -58,6 +58,11 @@
   hardware.graphics.extraPackages = with pkgs; [ intel-media-driver ];
   boot.kernelParams = [ "i915.enable_guc=3" ];
 
+  networking.networkmanager.settings."connection-wifi-ath10k_pci" = {
+    match-device = "driver:ath10k_pci";
+    "wifi-sec.pmf" = 1;
+  };
+
   hardware.bluetooth.enable = true;
 
   services.kmscon.config.font-size = 24;
