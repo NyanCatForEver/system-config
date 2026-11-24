@@ -18,12 +18,13 @@
 
     distrobox
 
-    python3
     nushell
 
     libqalculate
     speedcrunch
 
+    python3
+    uv
     ruff
     ty
 
