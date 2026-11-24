@@ -24,6 +24,9 @@
     libqalculate
     speedcrunch
 
+    ruff
+    ty
+
     nixfmt
     nixd
 
